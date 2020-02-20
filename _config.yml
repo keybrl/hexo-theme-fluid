@@ -168,6 +168,9 @@ post:
   comments:  # 评论
     enable: false  # 开启评论
     type: disqus  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
+    explanation: |  # 指定评论模块前的说明（可不填）
+      <h2>评论</h2>
+      <p>看完文章有什么想对我说的吗，可以通过评论写下来。</p>
   image_zoom:  # 文章图片可点击放大
     enable: true
   math:  # 数学公式，开启之前需要更换 Markdown 渲染器，否则复杂公式会有兼容问题，具体请见 https://hexo.fluid-dev.com/docs/guide/#数学公式

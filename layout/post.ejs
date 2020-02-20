@@ -9,7 +9,7 @@ page.banner_img_height = theme.post.banner_img_height
   <div class="row">
     <div class="d-none d-lg-block col-lg-2"></div>
     <div class="col-lg-8 nopadding-md">
-      <div class="py-5 z-depth-3" id="board">
+      <div class="board first-board py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
             <%- page.content %>
@@ -47,24 +47,43 @@ page.banner_img_height = theme.post.banner_img_height
       <%- partial('_partial/toc') %>
     </div>
   </div>
-</div>
 
-<!-- custom -->
-<% if(theme.post.custom.enable) { %>
-  <div class="col-lg-7 mx-auto nopadding-md">
-    <div class="container custom post-content mx-auto">
-      <%- theme.post.custom.content %>
+  <!-- comments -->
+  <% if(page.comments && theme.post.comments.enable) { %>
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="board py-5 z-depth-3">
+        <div class="container comments mx-auto" id="comments">
+          <% if(theme.post.comments.explanation) { %>
+            <div class="markdown-body">
+              <%- theme.post.comments.explanation %>
+            </div>
+          <% } %>
+
+          <% var type = '_partial/comments/' + theme.post.comments.type %>
+          <%- partial(type) %>
+        </div>
+      </div>
     </div>
   </div>
-<% } %>
+  <% } %>
 
-<!-- Comments -->
-<div class="col-lg-7 mx-auto nopadding-md">
-  <div class="container comments mx-auto" id="comments">
-    <% if(page.comments && theme.post.comments.enable) { %>
-      <br><br>
-      <% var type = '_partial/comments/' + theme.post.comments.type %>
-      <%- partial(type) %>
-    <% } %>
+  <!-- custom -->
+  <% if(theme.post.custom.enable) { %>
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="board py-5 z-depth-3">
+          <div class="col-lg-7 mx-auto nopadding-md">
+            <div class="container custom post-content mx-auto">
+              <%- theme.post.custom.content %>
+            </div>
+          </div>
+      </div>
+    </div>
   </div>
+  <% } %>
 </div>
+
+
