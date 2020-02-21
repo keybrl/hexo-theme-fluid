@@ -12,7 +12,7 @@ page.banner_img_height = theme.links.banner_img_height
       <div class="card-body">
         <% var props = theme.links.items[each] %>
         <% if (!props) continue %>
-        <a href="<%= url_for(props[0]) %>">
+        <a href="<%= url_for(props[0]) %>" target="_blank">
           <h5 class="card-title link-card-title"><%- each %></h5>
           <p class="card-text link-card-text"><%- props[1] %></p>
         </a>
