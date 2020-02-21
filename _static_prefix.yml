@@ -64,3 +64,5 @@ smooth_scroll: /lib/smoothscroll
 mathjax: https://cdn.staticfile.org/mathjax/2.7.6/
 
 katex: /lib/katex
+
+ali_icon: /lib/ali-icon
