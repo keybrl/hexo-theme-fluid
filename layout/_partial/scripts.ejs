@@ -34,7 +34,7 @@
   <%- js_ex(theme.static_prefix.smooth_scroll, "SmoothScroll.min.js") %>
 <% } %>
 
-<% if (theme.footer.statistics.enable || theme.post.meta.views.enable) { %>
+<% if (theme.footer.statistics.enable || (theme.post.meta.views.enable && !(theme.post.comments.enable && theme.post.comments.type === 'valine' && theme.valine.visitor))) { %>
   <%- js_async("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js") %>
 <% } %>
 

@@ -1,11 +1,12 @@
 <% if(theme.valine.appid && theme.valine.appkey){ %>
   <div id="vcomments" style="margin: 1rem auto;"></div>
   <script defer src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <%- js('lib/valine/Valine.min.js') %>
 
   <script>
-    var notify = '<%= theme.valine.notify %>' === true;
-    var verify = '<%= theme.valine.verify %>' === true;
+    var notify = '<%= theme.valine.notify %>' === 'true';
+    var verify = '<%= theme.valine.verify %>' === 'true';
+    var visitor = '<%= theme.valine.visitor %>' === 'true';
     var oldLoad = window.onload;
     window.onload = function () {
       new Valine({
@@ -16,8 +17,9 @@
         app_key: "<%= theme.valine.appkey %>",
         placeholder: "<%= theme.valine.placeholder %>",
         avatar: "<%= theme.valine.avatar %>",
-        meta: ['nick', 'mail', 'link'],
+        meta: <%- theme.valine.meta %>,
         pageSize: "<%= theme.valine.pageSize %>",
+        visitor: visitor,
       });
       oldLoad && oldLoad();
     };
