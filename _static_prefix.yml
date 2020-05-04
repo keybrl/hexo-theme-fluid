@@ -23,9 +23,9 @@
 # Internal static
 #---------------------------
 
-internal_js: /js
-internal_css: /css
-internal_img: /img
+internal_js: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/js
+internal_css: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/css
+internal_img: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/img
 
 
 #---------------------------
@@ -33,36 +33,36 @@ internal_img: /img
 # Third-party library
 #---------------------------
 
-anchor: /lib/anchor
+anchor: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/anchor
 
-font_awesome: /lib/font-awesome
+font_awesome: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/font-awesome
 
-github_markdown: /lib/github-markdown
+github_markdown: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/github-markdown
 
-jquery: /lib/jquery
+jquery: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/jquery
 
-bootstrap: /lib/bootstrap
+bootstrap: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/bootstrap
 
-mdbootstrap: /lib/mdbootstrap
+mdbootstrap: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/mdbootstrap
 
 # umd
-popper: /lib/popper
+popper: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/popper
 
-prettify: /lib/prettify
+prettify: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/prettify
 # 高亮主题的路径，只支持 min.css，文件名需要与 _config.highlight.theme 对应
 # the path of highlight theme, only support `min.css` file，filename need to be the same as _config.highlight.theme
-prettify_theme: /lib/prettify
+prettify_theme: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/prettify
 
-tocbot: /lib/tocbot
+tocbot: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/tocbot
 
-typed: /lib/typed
+typed: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/typed
 
-fancybox: /lib/fancybox
+fancybox: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/fancybox
 
-smooth_scroll: /lib/smoothscroll
+smooth_scroll: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/smoothscroll
 
 mathjax: https://cdn.staticfile.org/mathjax/2.7.6/
 
-katex: /lib/katex
+katex: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/katex
 
-ali_icon: /lib/ali-icon
+ali_icon: https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/ali-icon

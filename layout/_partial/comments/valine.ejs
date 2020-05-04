@@ -1,7 +1,7 @@
 <% if(theme.valine.appid && theme.valine.appkey){ %>
   <div id="vcomments" style="margin: 1rem auto;"></div>
-  <%- js('/lib/valine/av-min.js') %>
-  <%- js('/lib/valine/Valine.min.js') %>
+  <script src="https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/valine/av-min.js"></script>
+  <script src="https://blog-assets-1253422097.file.myqcloud.com/fluid-theme/lib/valine/Valine.min.js"></script>
 
   <script>
     var notify = '<%= theme.valine.notify %>' === 'true';
